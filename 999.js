@@ -1,4 +1,4 @@
-// Задача 1: Проверка наличия символа (с учётом регистра)
+// Задача 1
 const containsChar = (str, char) => {
   return str.includes(char);
 };
@@ -8,7 +8,7 @@ console.log(containsChar('world', 'z')); // false
 console.log(containsChar('Hello', 'h')); // false
 
 
-// Задача 2: Разворот строки
+// Задача 2
 const reverse = (str) => {
   return str.split('').reverse().join('');
 };
@@ -17,7 +17,7 @@ console.log(reverse('listen')); // 'netsil'
 console.log(reverse('hello')); // 'olleh'
 
 
-// Задача 3: Чётные индексы — нижний регистр, нечётные — верхний
+// Задача 3
 const wordsToRegister = (str) => {
   return str
     .split('')
@@ -29,7 +29,7 @@ console.log(wordsToRegister('hello')); // 'hElLo'
 console.log(wordsToRegister('test test')); // 'tEsT tEsT'
 
 
-// Задача 4: Сумма всех цифр в строке
+// Задача 4
 const sumOfDigitsInString = (str) => {
   let sum = 0;
   for (let char of str) {
@@ -44,7 +44,7 @@ console.log(sumOfDigitsInString('abc123')); // 6
 console.log(sumOfDigitsInString('5 apples and 3 oranges')); // 8
 
 
-// Задача 5: Замена всех вхождений символа или 'Error'
+// Задача 5
 const checkChars = (str, oldChar, newChar) => {
   if (!str.includes(oldChar)) {
     return 'Error';
